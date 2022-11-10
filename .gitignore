@@ -73,3 +73,6 @@ crashlytics-build.properties
 
 # Bayat Assets (Not all assets are used)
 /Assets/BayatGames
+
+# Project Setting (should this be ignored ?)
+/ProjectSettings
