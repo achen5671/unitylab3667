@@ -1,4 +1,4 @@
-## Lab 1
+## Lab 1 [DONE]
 1. Create a new 2D project.
 2. If you are able to easily import the Standard 2D asset, play around with them a bit. If you're having trouble with this, skip this step.
 3. Add in (at least) one image to your scene. To do that, find an image that you like. In the Project window, right-click Assets and choose Import New. Choose the Image. You should see it added to the Assets folder. In the Inspector window, change "Texture Type" to Sprite (2D and UI).
@@ -8,7 +8,7 @@ Then click (menu) GameObject -> 2D Object -> Sprite. Click on the sprite to see 
 This lab will not be collected, but hang onto it, because we'll revisit it next week.
 
 
-## Unity Lab 2: movement and user input
+## Unity Lab 2: movement and user input [DONE]
 This is a lab that explores movement and user input in Unity. We are getting started on a semester-long project of creating a "balloon popping game."
 1. Open up the project that you were working on last time and get rid of all the prefabs from it. Those were just to play around with. You should be left with a background and foreground.
 Create a sprite out of an image (of your choice).  Give it a Rigidbody2D (AddComponent -> Physics 2D). Disable gravity so that it can hang in mid-air.
