@@ -32,6 +32,8 @@ public class Balloon : MonoBehaviour
     void FixedUpdate() {
         // Auto translate
         // transform.position=new Vector2(Mathf.PingPong(Time.time*velocity,max-min), transform.position.y);
+        // See:
+        // * https://answers.unity.com/questions/1606381/how-to-make-a-object-move-right-automatically-in-2.html
         transform.Translate(Vector2.right * Time.deltaTime * velocity);
     }
 
