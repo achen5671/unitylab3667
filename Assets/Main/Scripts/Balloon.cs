@@ -43,4 +43,8 @@ public class Balloon : MonoBehaviour
             transform.Rotate(0, 180, 0);
         }
     }
+    
+    public void Pop() {
+        Destroy(gameObject);
+    }
 }

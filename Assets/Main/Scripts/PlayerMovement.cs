@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
 	[SerializeField] Rigidbody2D rigid;
 	[SerializeField] float movement;
@@ -24,7 +24,7 @@ public class Movement : MonoBehaviour
     void Update()
     {
 		movement = Input.GetAxis("Horizontal");
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
 			jumpPressed = true;
 		
     }
@@ -58,5 +58,9 @@ public class Movement : MonoBehaviour
 	{
 		if (collision.gameObject.tag == "Ground")
 			isGrounded = true;
+	}
+
+	public bool canAttack() {
+		return true;
 	}
 }
