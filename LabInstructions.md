@@ -15,7 +15,7 @@ Create a sprite out of an image (of your choice).  Give it a Rigidbody2D (AddCom
 2. Write a script that allows user input to control the sprite movement, both vertically and horizontally. You may find it useful to refer to the script that we wrote collaboratively in class. You may find it useful to allow for some sort of sudden surge of vertical movement -- up to you. Remember that the sprite should turn around when it changes directions.
 3. Create a balloon sprite using another image. This will be your target. Write a new script that controls its movement. This will not be controlled by user input, so make it fully automatic -- it should move across the screen, in whichever directions you choose. Note that you will want to check if it is moving past the edges of the screen (use the transform.position attribute); if it does, flip it around and send it back in the opposite direction. 
 
-## Unity Lab 3
+## Unity Lab 3 [DONE]
 1. By now, you should have: a player object (movement controlled through user input), and a target balloon (automatic movement).
 2. Create a pin  sprite and give it a movement script that sends it moving horizontally across the screen. 
 Create a prefab out of the pin. Then delete all instances of the pin prefab from the hierarchy. 
