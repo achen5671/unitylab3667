@@ -147,3 +147,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
+  popSound: {fileID: 8300000, guid: 2725d8aa3f90b43f38eba0c53a7d4246, type: 3}

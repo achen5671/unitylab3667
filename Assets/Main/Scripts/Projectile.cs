@@ -5,6 +5,8 @@ public class Projectile : MonoBehaviour
     public float speed;
     private Rigidbody2D rb;
 
+    [SerializeField] private AudioClip popSound;
+
     void Start() {
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = transform.right * speed;
@@ -15,6 +17,7 @@ public class Projectile : MonoBehaviour
         Balloon balloon = collision.GetComponent<Balloon>();
 
         if(balloon != null) {
+            SoundManager.instance.PlaySound(popSound);
             balloon.Pop();
         }
         Destroy(gameObject);
