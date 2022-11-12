@@ -22,4 +22,10 @@ public class Projectile : MonoBehaviour
         }
         Destroy(gameObject);
     }
+
+    // Not necessary?
+    // destroy item when item is out of camera
+    // void OnBecameInvisible() {
+    //      Destroy(gameObject);
+    //  }
 }

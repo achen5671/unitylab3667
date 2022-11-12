@@ -16,6 +16,12 @@ public class Balloon : MonoBehaviour
     // What is this doing?
     private float min=0f;
     private float max=3f;
+    [SerializeField] private bool autoMove;
+    [SerializeField] private bool expand;
+    [SerializeField] private float secondsToPop;
+
+    float scale = 0.01f;
+
 
     // Start is called before the first frame update
     void Start(){
@@ -26,7 +32,13 @@ public class Balloon : MonoBehaviour
 
     // Update is called once per frame
     void Update(){
-
+        if (expand){
+            // Time is a little off. fix seconds
+            scale += 0.05f * secondsToPop * Time.deltaTime;
+            transform.localScale = new Vector2(scale, scale);
+            if (scale >= 0.5f)
+                Pop();
+        }
     }
 
     void FixedUpdate() {
@@ -34,7 +46,8 @@ public class Balloon : MonoBehaviour
         // transform.position=new Vector2(Mathf.PingPong(Time.time*velocity,max-min), transform.position.y);
         // See:
         // * https://answers.unity.com/questions/1606381/how-to-make-a-object-move-right-automatically-in-2.html
-        transform.Translate(Vector2.right * Time.deltaTime * velocity);
+        if (autoMove)
+            transform.Translate(Vector2.right * Time.deltaTime * velocity);
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
