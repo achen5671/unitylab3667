@@ -19,6 +19,7 @@ public class Balloon : MonoBehaviour
     [SerializeField] private bool autoMove;
     [SerializeField] private bool expand;
     [SerializeField] private float secondsToPop;
+    [SerializeField] private AudioClip popSound;
 
     float scale = 0.01f;
 
@@ -58,6 +59,7 @@ public class Balloon : MonoBehaviour
     }
     
     public void Pop() {
+        SoundManager.instance.PlaySound(popSound);
         Destroy(gameObject);
     }
 }

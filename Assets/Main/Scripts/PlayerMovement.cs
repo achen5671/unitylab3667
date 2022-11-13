@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Rename to player ?
 public class PlayerMovement : MonoBehaviour
 {
 	[SerializeField] Rigidbody2D rigid;

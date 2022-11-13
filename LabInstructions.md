@@ -54,3 +54,8 @@ settings
 Extra credit: also include a difficulty control. You decide what makes your game easier or harder, just document your choice.
 3. A pause/resume functionality in your game, as well as a link back from the game to the main menu.
 4. One other UI component of your choice that has not been used so far (e.g. Dropdown, Toggle, Input Field).
+
+## Unity labs 6 and 7: persistent data and high scores
+Persistent data:
+1. Your game must have two pieces of data that persist from scene to scene (score, health, settings, name, etc.)
+2. Your game should store the top X high scores, where X must be at least 5. They should be displayed in decreasing order of score, but the UI details are completely up to you otherwise. Don't forget to add a link to the high scores from your main menu!

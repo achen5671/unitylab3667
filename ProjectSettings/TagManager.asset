@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - EdgeCollider
+  - Balloon
+  - player
   layers:
   - Default
   - TransparentFX
