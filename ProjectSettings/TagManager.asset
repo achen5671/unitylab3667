@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - EdgeCollider
+  - Balloon
   layers:
   - Default
   - TransparentFX

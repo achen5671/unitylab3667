@@ -76,3 +76,4 @@ crashlytics-build.properties
 
 # Project Setting (should this be ignored ?)
 /ProjectSettings
+.DS_Store

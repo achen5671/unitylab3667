@@ -19,7 +19,10 @@ public class Projectile : MonoBehaviour
         if(balloon != null) {
             SoundManager.instance.PlaySound(popSound);
             balloon.Pop();
+            // todo: Move this to Score.cs
+            Score.AddScore();
         }
+        
         Destroy(gameObject);
     }
 
