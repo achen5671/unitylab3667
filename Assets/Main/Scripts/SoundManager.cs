@@ -13,6 +13,12 @@ public class SoundManager : MonoBehaviour
         source = GetComponent<AudioSource>();
     }
 
+    void Start() {
+        // Let sound play when switching scene
+        // Without this: Audio will get cut off when switching between scenes (balloon pop)
+        DontDestroyOnLoad( gameObject );
+    }
+
     public void PlaySound(AudioClip _sound) {
         source.PlayOneShot(_sound);
     }

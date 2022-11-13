@@ -7,14 +7,14 @@ using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour
 {
-    private const int POINTS_PER_TARGET = 1;
-    private const int POINTS_TO_NEXT_LEVEL = 1;
+    private const int POINTS_PER_TARGET = 10;
+    private const int NEXT_GOAL = 30; // need better name
 
     [SerializeField] public Text scoreText;
     [SerializeField] public static int score = 0;
 
     // Create next level script?
-    private static int scoreToNextLevel = 1;
+    private static int scoreToNextLevel = 10;
     public int toNextScene;
 
     // Start is called before the first frame update
@@ -27,7 +27,7 @@ public class Score : MonoBehaviour
         scoreText.text = "Score: " + score;
         if (score == scoreToNextLevel) {
             SceneManager.LoadScene(toNextScene);
-            scoreToNextLevel++;
+            scoreToNextLevel += NEXT_GOAL;
         }
     }
 
