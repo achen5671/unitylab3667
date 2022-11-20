@@ -8,6 +8,7 @@ public class Highscore : MonoBehaviour
     public const int NUM_HIGH_SCORES = 5;
     public const string NAME_KEY = "HSName";
     public const string SCORE_KEY = "HScore";
+    [SerializeField] string playerName;
     [SerializeField] int playerScore;
 
     [SerializeField] Text[] nameTexts;
@@ -16,7 +17,8 @@ public class Highscore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       playerScore = PersistentData.Instance.GetScore();
+       playerName = PersistentData.Instance.GetName();
+       playerScore = Score.GetScore();
 
        SaveScore();
 
@@ -37,14 +39,17 @@ public class Highscore : MonoBehaviour
                     int tempScore = currentScore;
                     string tempName = PlayerPrefs.GetString(currentNameKey);
 
+                    PlayerPrefs.SetString(currentNameKey, playerName);
                     PlayerPrefs.SetInt(currentScoreKey, playerScore);
 
                     playerScore = tempScore;
+                    playerName = tempName;
                 }
             }
 
             else
             {
+                PlayerPrefs.SetString(currentNameKey, playerName);
                 PlayerPrefs.SetInt(currentScoreKey, playerScore);
                 return;
             }

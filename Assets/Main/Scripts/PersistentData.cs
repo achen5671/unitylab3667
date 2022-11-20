@@ -5,7 +5,7 @@ using UnityEngine;
 public class PersistentData : MonoBehaviour
 {
 
-    [SerializeField] int playerScore;
+    [SerializeField] string playerName;
 
     public static PersistentData Instance;
 
@@ -25,8 +25,7 @@ public class PersistentData : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerScore = 0;
-        
+        playerName = "Anonymous";
     }
 
     // Update is called once per frame
@@ -35,13 +34,12 @@ public class PersistentData : MonoBehaviour
         
     }
 
-    public void SetScore(int s)
+    public void SetName(string s)
     {
-        playerScore = s;
+        playerName = s;
     }
 
-    public int GetScore()
-    {
-        return playerScore;
+    public string GetName() {
+        return playerName;
     }
 }

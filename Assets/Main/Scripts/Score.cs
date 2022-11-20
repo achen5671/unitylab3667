@@ -40,4 +40,8 @@ public class Score : MonoBehaviour
     public static void AddScore() {
         score += POINTS_PER_TARGET;
     }
+
+    public static int GetScore() {
+        return score;
+    }
 }
