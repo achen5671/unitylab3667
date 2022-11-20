@@ -15,8 +15,12 @@ public class Score : MonoBehaviour
 
     // Create next level script?
     private static int scoreToNextLevel = 10;
+    // private?
     public int toNextScene;
 
+    private void Awake() {
+        toNextScene = SceneManager.GetActiveScene().buildIndex + 1;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +30,7 @@ public class Score : MonoBehaviour
     public void Update() {
         scoreText.text = "Score: " + score;
         if (score == scoreToNextLevel) {
+            // todo: restart game on last scene or have a game over screen
             SceneManager.LoadScene(toNextScene);
             scoreToNextLevel += NEXT_GOAL;
         }
