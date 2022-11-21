@@ -59,3 +59,7 @@ Extra credit: also include a difficulty control. You decide what makes your game
 Persistent data:
 1. Your game must have two pieces of data that persist from scene to scene (score, health, settings, name, etc.)
 2. Your game should store the top X high scores, where X must be at least 5. They should be displayed in decreasing order of score, but the UI details are completely up to you otherwise. Don't forget to add a link to the high scores from your main menu!
+
+## Unity Lab 8: animations
+Incorporate two animations into your game. The animations must be launched via scripts*; they can either be two animations of the same game object, like we did in class or two animations of different objects.
+*i.e., not an animation of a flying bird that is present the entire scene. You must use code to change the animation or start the animation.
