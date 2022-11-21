@@ -62,4 +62,4 @@ Persistent data:
 
 ## Unity Lab 8: animations
 Incorporate two animations into your game. The animations must be launched via scripts*; they can either be two animations of the same game object, like we did in class or two animations of different objects.
-*i.e., not an animation of a flying bird that is present the entire scene. You must use code to change the animation or start the animation. 
+*i.e., not an animation of a flying bird that is present the entire scene. You must use code to change the animation or start the animation.

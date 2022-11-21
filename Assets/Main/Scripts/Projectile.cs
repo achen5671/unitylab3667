@@ -18,7 +18,6 @@ public class Projectile : MonoBehaviour
             balloon.Pop();
             Score.AddScore();
         }
-
         Destroy(gameObject);
     }
 
