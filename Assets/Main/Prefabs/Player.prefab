@@ -136,7 +136,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootingPoint: {fileID: 5835117670062602692}
   bulletPrefab: {fileID: 3679760504725347911, guid: a476bde7f8f3643b8b5de131c5f7f3bb, type: 3}
-  shootSound: {fileID: 8300000, guid: 5fbca756bedda4a0fa56458af9a0b110, type: 3}
+  attackCooldown: 0
+  shootSound: {fileID: 8300000, guid: 9ff1e97483ea4407d96cb1860ba7cea2, type: 3}
 --- !u!50 &5835117670125916039
 Rigidbody2D:
   serializedVersion: 4
