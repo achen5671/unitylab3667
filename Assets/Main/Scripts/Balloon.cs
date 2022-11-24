@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 // Balloon sprite. Contains balloon logic such as movement and collission
@@ -37,8 +38,13 @@ public class Balloon : MonoBehaviour
             // Time is a little off. fix seconds
             scale += 0.05f * secondsToPop * Time.deltaTime;
             transform.localScale = new Vector2(scale, scale);
-            if (scale >= 0.5f)
+            if (scale >= 0.5f){
                 Pop();
+                Score.ResetScore();
+
+                // Reset scene if balloon pops
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
         }
     }
 

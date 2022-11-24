@@ -22,7 +22,7 @@ public class KillPlayer : MonoBehaviour
         if (other.CompareTag("player")) {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             // Manually set scene
-            // SceneManager.LoadScene(respawn);
+            Score.ResetScore();
 
         }
     }

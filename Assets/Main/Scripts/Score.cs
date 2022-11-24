@@ -13,6 +13,9 @@ public class Score : MonoBehaviour
     [SerializeField] public Text scoreText;
     [SerializeField] public static int score = 0;
 
+    // used to track and reset score if balloon pop
+    public static int tempScore = 0;
+
     // Create next level script?
     private static int scoreToNextLevel = 10;
     // private?
@@ -32,6 +35,11 @@ public class Score : MonoBehaviour
         if (score == scoreToNextLevel) {
             // todo: restart game on last scene or have a game over screen
             SceneManager.LoadScene(toNextScene);
+
+            // reset tempscore if you proceed to next level
+            tempScore = 0;
+
+            // Increase next ogal limit
             scoreToNextLevel += NEXT_GOAL;
         }
     }
@@ -39,9 +47,16 @@ public class Score : MonoBehaviour
     // Use own method to update score
     public static void AddScore() {
         score += POINTS_PER_TARGET;
+        tempScore += POINTS_PER_TARGET;
     }
 
     public static int GetScore() {
         return score;
+    }
+
+    // Use own method to update score
+    public static void ResetScore() {
+        score -= tempScore;
+        tempScore = 0;
     }
 }
