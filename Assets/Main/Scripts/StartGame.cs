@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+// See: (for user input)
+// * https://www.youtube.com/watch?v=guelZvubWFY
 public class StartGame : MonoBehaviour
 {
     [SerializeField] public InputField playerNameInput;

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// See:
+// * https://www.youtube.com/watch?v=TIXY0TR7Z0g
 public class FlyingEnemy : MonoBehaviour
 {
 

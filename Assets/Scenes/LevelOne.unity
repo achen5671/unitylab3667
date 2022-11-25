@@ -2127,6 +2127,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Balloon
       objectReference: {fileID: 0}
+    - target: {fileID: 1236011412238675598, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
+      propertyPath: expand
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236011412238675598, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
+      propertyPath: autoMove
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236011412238675598, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
+      propertyPath: secondsToPop
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1236011412238675599, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
       propertyPath: m_RootOrder
       value: 0

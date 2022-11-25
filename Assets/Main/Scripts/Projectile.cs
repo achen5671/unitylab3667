@@ -14,9 +14,10 @@ public class Projectile : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision) {
         Balloon balloon = collision.GetComponent<Balloon>();
         if (collision.CompareTag("Balloon")){
-            if(balloon != null) {
+            if(balloon != null) {;
+                Score.AddScore(balloon.transform.localScale.x);
                 balloon.Pop();
-                Score.AddScore();
+
             }
             Destroy(gameObject);
         }

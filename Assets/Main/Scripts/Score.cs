@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour
 {
-    private const int POINTS_PER_TARGET = 10;
+    private const int POINTS_PER_TARGET = 15;
     private const int NEXT_GOAL = 30; // need better name
 
     [SerializeField] public Text scoreText;
@@ -32,7 +32,7 @@ public class Score : MonoBehaviour
 
     public void Update() {
         scoreText.text = "Score: " + score;
-        if (score == scoreToNextLevel) {
+        if (score >= scoreToNextLevel) {
             // todo: restart game on last scene or have a game over screen
             SceneManager.LoadScene(toNextScene);
 
@@ -45,9 +45,18 @@ public class Score : MonoBehaviour
     }
 
     // Use own method to update score
-    public static void AddScore() {
-        score += POINTS_PER_TARGET;
-        tempScore += POINTS_PER_TARGET;
+    public static void AddScore(float scale = (float)1) {
+        // scale is the scale of the balloon.
+        // bigger ballon gives more points than smaller ones (for expanding balloons)
+        // Math is weird but meh. smol ballon = more points than bigger
+        int _score = 1;
+        // 0.5 becasue thats the scale of balloon. THis is terrible but works for now
+        if (scale < 0.5)
+            _score = Mathf.RoundToInt( POINTS_PER_TARGET * (1-(float)scale));
+        else 
+            _score = POINTS_PER_TARGET;
+        score += _score;
+        tempScore += _score;
     }
 
     public static int GetScore() {
