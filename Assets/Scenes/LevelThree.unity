@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: balloon (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1236011412238675593, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
+      propertyPath: m_TagString
+      value: Balloon
+      objectReference: {fileID: 0}
     - target: {fileID: 1236011412238675598, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
       propertyPath: expand
       value: 1
@@ -1338,6 +1342,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: balloon (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1236011412238675593, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
+      propertyPath: m_TagString
+      value: Balloon
+      objectReference: {fileID: 0}
     - target: {fileID: 1236011412238675598, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
       propertyPath: autoMove
       value: 0
@@ -2035,6 +2043,10 @@ PrefabInstance:
     - target: {fileID: 1236011412238675593, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
       propertyPath: m_Name
       value: balloon
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236011412238675593, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
+      propertyPath: m_TagString
+      value: Balloon
       objectReference: {fileID: 0}
     - target: {fileID: 1236011412238675599, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
       propertyPath: m_RootOrder

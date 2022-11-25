@@ -13,17 +13,18 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) {
         Balloon balloon = collision.GetComponent<Balloon>();
-
-        if(balloon != null) {
-            balloon.Pop();
-            Score.AddScore();
+        if (collision.CompareTag("Balloon")){
+            if(balloon != null) {
+                balloon.Pop();
+                Score.AddScore();
+            }
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
+        // Kill Enemy
+        if (collision.CompareTag("Enemy")){
+            FlyingEnemy enemy = collision.GetComponent<FlyingEnemy>();
+            enemy.KillEnemy();
+            Destroy(gameObject);
+        }
     }
-
-    // Not necessary?
-    // destroy item when item is out of camera
-    // void OnBecameInvisible() {
-    //      Destroy(gameObject);
-    //  }
 }
