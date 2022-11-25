@@ -32,7 +32,7 @@ If you've gotten this far, give yourself a giant pat on the back!
  
 * In Unity, "Fire1" is mapped to Ctrl. If you want to give more flexibility to use Option and/or Command also, you can also use Fire2/Fire3  https://docs.unity3d.com/Manual/ConventionalGameInput.html
 
-## Unity Lab 4: text fields and scenes
+## Unity Lab 4: text fields and scenes [DONE]
 Make the game more interesting!
 1. Make your balloon grow as time goes on -- e.g. increase in size every X seconds. You probably want to use InvokeRepeating.
 See here: https://docs.unity3d.com/ScriptReference/MonoBehaviour.InvokeRepeating.html

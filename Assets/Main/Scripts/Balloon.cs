@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 // Balloon sprite. Contains balloon logic such as movement and collission
 // AC:
 // * Auto movment [DONE]
-// * on collission to left and right screen
-// * flip image
+// * on collission to left and right screen [DONE]
+// * flip image [DONE]
 public class Balloon : MonoBehaviour
 {
     // float ?
@@ -50,6 +50,9 @@ public class Balloon : MonoBehaviour
         Destroy(gameObject);
     }
 
+    // See:
+    // * https://stackoverflow.com/questions/46587150/scale-gameobject-over-time
+    // for info on scaling an object over time
     IEnumerator scaleOverTime(Transform objectToScale, Vector3 toScale, float duration)
     {
         //Make sure there is only one instance of this function running

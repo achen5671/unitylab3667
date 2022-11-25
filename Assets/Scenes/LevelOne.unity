@@ -2133,7 +2133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1236011412238675598, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
       propertyPath: autoMove
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1236011412238675598, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
       propertyPath: secondsToPop
