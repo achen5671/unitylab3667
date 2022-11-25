@@ -10,6 +10,7 @@ public class SoundManager : MonoBehaviour
     public static SoundManager instance {get; private set;}
     private AudioSource source;
 
+    // See: https://www.youtube.com/watch?v=yWCHaTwVblk for volume slider
     [SerializeField] Slider volumeSlider;
     private void Awake() {
         instance = this;
