@@ -63,9 +63,15 @@ public class Score : MonoBehaviour
         return score;
     }
 
-    // Use own method to update score
+    // Use own method to update score, this resets tempScore no score
     public static void ResetScore() {
         score -= tempScore;
+        tempScore = 0;
+    }
+
+    public static void Reset() {
+        score = 0;
+        scoreToNextLevel = 10;
         tempScore = 0;
     }
 }

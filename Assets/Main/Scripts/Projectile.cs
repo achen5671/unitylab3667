@@ -17,7 +17,6 @@ public class Projectile : MonoBehaviour
             if(balloon != null) {;
                 Score.AddScore(balloon.transform.localScale.x);
                 balloon.Pop();
-
             }
             Destroy(gameObject);
         }
