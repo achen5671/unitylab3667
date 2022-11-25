@@ -44,7 +44,7 @@ Duplicate your scene twice times to create a two new scenes, and then edit the n
 Every time that your player pops the balloon, the game should transition to the next level. Every time the balloon disappears, the current level should restart.
 Use File-Build Settings to include all of your scenes in the build, and then test that the levels work.
 
-## Unity Lab 5: UI
+## Unity Lab 5: UI [DONE] NOTE: Need to do Extra Credit
 You knew this was coming ... the Menu / UI lab:
 1. Create a menu scene for your game utilizing buttons (as well as any other UI components that you'd like). Your menu must include at least:
 instructions
