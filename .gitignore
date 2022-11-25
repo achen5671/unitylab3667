@@ -73,7 +73,6 @@ crashlytics-build.properties
 
 # Bayat Assets (Not all assets are used)
 /Assets/BayatGames
-/Assets/Ninja Files
 
 # Pixel Fonts
 /PixelFonts
