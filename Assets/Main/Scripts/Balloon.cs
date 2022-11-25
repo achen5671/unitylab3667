@@ -1,45 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 // Balloon sprite. Contains balloon logic such as movement and collission
 // AC:
 // * Auto movment [DONE]
-// * on collission to left and right screen
-// * flip image
+// * on collission to left and right screen [DONE]
+// * flip image [DONE]
 public class Balloon : MonoBehaviour
 {
     // float ?
     private const int velocity = 20;
 
-    // What is this doing?
-    private float min=0f;
-    private float max=3f;
     [SerializeField] private bool autoMove;
     [SerializeField] private bool expand;
     [SerializeField] private float secondsToPop;
     [SerializeField] private AudioClip popSound;
-
-    float scale = 0.01f;
-
+    bool isScaling = false;
 
     // Start is called before the first frame update
     void Start(){
-        // TODO: What is this doing
-        min=transform.position.x;
-        max=transform.position.x + 20;
-    }
-
-    // Update is called once per frame
-    void Update(){
-        if (expand){
-            // Time is a little off. fix seconds
-            scale += 0.05f * secondsToPop * Time.deltaTime;
-            transform.localScale = new Vector2(scale, scale);
-            if (scale >= 0.5f)
-                Pop();
+        // Expands the balloon
+        if (expand) {
+            StartCoroutine(scaleOverTime(transform, new Vector3(0, 0, 90), secondsToPop));
         }
+
     }
 
     void FixedUpdate() {
@@ -61,5 +48,37 @@ public class Balloon : MonoBehaviour
     public void Pop() {
         SoundManager.instance.PlaySound(popSound);
         Destroy(gameObject);
+    }
+
+    // See:
+    // * https://stackoverflow.com/questions/46587150/scale-gameobject-over-time
+    // for info on scaling an object over time
+    IEnumerator scaleOverTime(Transform objectToScale, Vector3 toScale, float duration)
+    {
+        //Make sure there is only one instance of this function running
+        if (isScaling)
+        {
+            yield break; ///exit if this is still running
+        }
+        isScaling = true;
+
+        float counter = 0;
+
+        //Get the current scale of the object to be moved
+        Vector3 startScaleSize = objectToScale.localScale;
+
+        while (counter < duration)
+        {
+            counter += Time.deltaTime;
+            objectToScale.localScale = Vector3.Lerp(toScale, startScaleSize, counter / duration);
+            yield return null;
+        }
+    
+        isScaling = false;
+        Pop();
+        Score.ResetScore();
+
+        // Reset scene if balloon pops
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

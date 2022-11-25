@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+// See: (for user input)
+// * https://www.youtube.com/watch?v=guelZvubWFY
 public class StartGame : MonoBehaviour
 {
     [SerializeField] public InputField playerNameInput;
@@ -12,6 +14,17 @@ public class StartGame : MonoBehaviour
     public void LoadGame(int index) {
         string s = playerNameInput.text;
         PersistentData.Instance.SetName(s);
+        Score.Reset();
         SceneManager.LoadScene(index);
     }  
+
+
+    // Magic numbers suks.
+    public void LoadSettings () {
+        SceneManager.LoadScene(1);
+    }
+
+    public void LoadStart() {
+        SceneManager.LoadScene(0);
+    }
 }

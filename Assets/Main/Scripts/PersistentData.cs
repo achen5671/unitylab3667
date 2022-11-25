@@ -28,12 +28,6 @@ public class PersistentData : MonoBehaviour
         playerName = "Anonymous";
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void SetName(string s)
     {
         playerName = s;

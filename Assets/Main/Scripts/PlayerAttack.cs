@@ -1,6 +1,9 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+// See:
+// * https://www.youtube.com/watch?v=vkKulG71Yzo
+// * https://www.youtube.com/watch?v=PUpC44Q64zY
 public class PlayerAttack : MonoBehaviour
 {
     public Transform shootingPoint;

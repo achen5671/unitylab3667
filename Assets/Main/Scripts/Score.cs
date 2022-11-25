@@ -7,11 +7,14 @@ using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour
 {
-    private const int POINTS_PER_TARGET = 10;
+    private const int POINTS_PER_TARGET = 15;
     private const int NEXT_GOAL = 30; // need better name
 
     [SerializeField] public Text scoreText;
     [SerializeField] public static int score = 0;
+
+    // used to track and reset score if balloon pop
+    public static int tempScore = 0;
 
     // Create next level script?
     private static int scoreToNextLevel = 10;
@@ -29,19 +32,46 @@ public class Score : MonoBehaviour
 
     public void Update() {
         scoreText.text = "Score: " + score;
-        if (score == scoreToNextLevel) {
+        if (score >= scoreToNextLevel) {
             // todo: restart game on last scene or have a game over screen
             SceneManager.LoadScene(toNextScene);
+
+            // reset tempscore if you proceed to next level
+            tempScore = 0;
+
+            // Increase next ogal limit
             scoreToNextLevel += NEXT_GOAL;
         }
     }
 
     // Use own method to update score
-    public static void AddScore() {
-        score += POINTS_PER_TARGET;
+    public static void AddScore(float scale = (float)1) {
+        // scale is the scale of the balloon.
+        // bigger ballon gives more points than smaller ones (for expanding balloons)
+        // Math is weird but meh. smol ballon = more points than bigger
+        int _score = 1;
+        // 0.5 becasue thats the scale of balloon. THis is terrible but works for now
+        if (scale < 0.5)
+            _score = Mathf.RoundToInt( POINTS_PER_TARGET * (1-(float)scale));
+        else 
+            _score = POINTS_PER_TARGET;
+        score += _score;
+        tempScore += _score;
     }
 
     public static int GetScore() {
         return score;
+    }
+
+    // Use own method to update score, this resets tempScore no score
+    public static void ResetScore() {
+        score -= tempScore;
+        tempScore = 0;
+    }
+
+    public static void Reset() {
+        score = 0;
+        scoreToNextLevel = 10;
+        tempScore = 0;
     }
 }

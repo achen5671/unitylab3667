@@ -1,0 +1,773 @@
+fileFormatVersion: 2
+guid: 8352a133ec57741e59d5e5b1da5928ef
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 332
+        width: 52
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5765558e3da0d4ff58ce04991f0bfb12
+      internalID: 1729483970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 345
+        width: 56
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee2f1b592d8f4a939fd5cef6e449f5e
+      internalID: -665449413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_2
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 346
+        width: 53
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e8401989caf4ae9a40c9f7aa85f49f
+      internalID: -1595407970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_3
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 357
+        width: 87
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98d811db08494460999338755752b66
+      internalID: -1392249145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_4
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 373
+        width: 91
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c72ab9ef9e34523bdc5f0e63d99e8d
+      internalID: 1499191224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_5
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 353
+        width: 88
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f50d92f9ee7444bb5113a60c0b64ae
+      internalID: -1799601244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 241
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ea6b1cf2fa7453ea87fa2d0c58b244
+      internalID: -1927621371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_7
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 259
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784a90bade28540cbaf78475d9a47816
+      internalID: -690158708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_8
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 257
+        width: 58
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd9d4098b0c64cbb8e0281b5f2d91ff
+      internalID: -1382006293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_9
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 268
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06740e6cff984a1881fdacd3eecbe8e
+      internalID: 327159324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_10
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 306
+        width: 87
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a779b12369e481bb22526c42d1c839
+      internalID: 1674828976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_11
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 289
+        width: 87
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd0d56d4b70cd462899108be3bda98cf
+      internalID: 1451832804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 185
+        width: 69
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c35d137ddfb4d64bacc73f2a13b542
+      internalID: 1385189257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_13
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 177
+        width: 52
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544aa1306341643c0ac38718ad9fb3eb
+      internalID: -850772555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_14
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 188
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6adde43f73e0545e6a86850e54dd959c
+      internalID: -1812539518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_15
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 204
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 618ae3f1713c7406e96832838719cd23
+      internalID: -698406761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_16
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 226
+        width: 64
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1681424e4833e403fb93516b5474ae2e
+      internalID: -1430655321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_17
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 192
+        width: 51
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca093f08dae64db9a8da39ec129b93c
+      internalID: -1362603614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_18
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 201
+        width: 55
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7632561ff203439db06b22a0d3ce196
+      internalID: 320867826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 98
+        width: 45
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 125f87de82fc14d7b95b32456282868f
+      internalID: 1918687924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_20
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 114
+        width: 93
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6176812901b5049be86e7ce140c9daf9
+      internalID: 51153884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_21
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 130
+        width: 70
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d321934deda8b49eda951cb28a6b9d00
+      internalID: 220774806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_22
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 130
+        width: 49
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea582ba3becfa4d94b7c6cc9c118ea09
+      internalID: -1504302635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_23
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 107
+        width: 63
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008611c9b5fd7403381c6cff92cf6614
+      internalID: -1982371131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_24
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 98
+        width: 67
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ad0a87fac784344863f2c88ebc5519
+      internalID: 1283657083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_25
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 52
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee21731c926104ca597dcc9d4e28a413
+      internalID: -275861238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_26
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 89
+        width: 65
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c30805329394933917447aab227204
+      internalID: 1745349560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_27
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 21
+        width: 90
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcdb161e834cb4e8c9605660b2110ef7
+      internalID: 1144633088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Lunar Silver Star Harmony - Bat Knight_28
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 22
+        width: 103
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf72fc1d452e4c919960a27483ac08c
+      internalID: -225532088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PSP - Lunar Silver Star Harmony - Bat Knight_7: -690158708
+      PSP - Lunar Silver Star Harmony - Bat Knight_15: -698406761
+      PSP - Lunar Silver Star Harmony - Bat Knight_27: 1144633088
+      PSP - Lunar Silver Star Harmony - Bat Knight_11: 1451832804
+      PSP - Lunar Silver Star Harmony - Bat Knight_18: 320867826
+      PSP - Lunar Silver Star Harmony - Bat Knight_25: -275861238
+      PSP - Lunar Silver Star Harmony - Bat Knight_22: -1504302635
+      PSP - Lunar Silver Star Harmony - Bat Knight_14: -1812539518
+      PSP - Lunar Silver Star Harmony - Bat Knight_21: 220774806
+      PSP - Lunar Silver Star Harmony - Bat Knight_24: 1283657083
+      PSP - Lunar Silver Star Harmony - Bat Knight_10: 1674828976
+      PSP - Lunar Silver Star Harmony - Bat Knight_5: -1799601244
+      PSP - Lunar Silver Star Harmony - Bat Knight_3: -1392249145
+      PSP - Lunar Silver Star Harmony - Bat Knight_13: -850772555
+      PSP - Lunar Silver Star Harmony - Bat Knight_9: 327159324
+      PSP - Lunar Silver Star Harmony - Bat Knight_16: -1430655321
+      PSP - Lunar Silver Star Harmony - Bat Knight_23: -1982371131
+      PSP - Lunar Silver Star Harmony - Bat Knight_1: -665449413
+      PSP - Lunar Silver Star Harmony - Bat Knight_2: -1595407970
+      PSP - Lunar Silver Star Harmony - Bat Knight_8: -1382006293
+      PSP - Lunar Silver Star Harmony - Bat Knight_17: -1362603614
+      PSP - Lunar Silver Star Harmony - Bat Knight_0: 1729483970
+      PSP - Lunar Silver Star Harmony - Bat Knight_4: 1499191224
+      PSP - Lunar Silver Star Harmony - Bat Knight_28: -225532088
+      PSP - Lunar Silver Star Harmony - Bat Knight_26: 1745349560
+      PSP - Lunar Silver Star Harmony - Bat Knight_6: -1927621371
+      PSP - Lunar Silver Star Harmony - Bat Knight_19: 1918687924
+      PSP - Lunar Silver Star Harmony - Bat Knight_12: 1385189257
+      PSP - Lunar Silver Star Harmony - Bat Knight_20: 51153884
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

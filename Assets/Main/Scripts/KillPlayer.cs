@@ -3,27 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// See:
+// https://www.youtube.com/watch?v=H69PfxOr6bk
 public class KillPlayer : MonoBehaviour
 {
-    public int respawn; // unused for now
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnTriggerEnter2D(Collider2D other) {
+        // Reload scene and reset score (score before level)
         if (other.CompareTag("player")) {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            // Manually set scene
-            // SceneManager.LoadScene(respawn);
-
+            Score.ResetScore();
         }
     }
 }
