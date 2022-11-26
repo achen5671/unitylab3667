@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 5835117670125916040}
   - component: {fileID: 5835117670125916041}
   - component: {fileID: 5835117670125916046}
+  - component: {fileID: 251163276064533989}
   m_Layer: 0
   m_Name: Player
   m_TagString: player
@@ -136,7 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootingPoint: {fileID: 5835117670062602692}
   bulletPrefab: {fileID: 3679760504725347911, guid: a476bde7f8f3643b8b5de131c5f7f3bb, type: 3}
-  attackCooldown: 0
+  attackCooldown: 0.5
   shootSound: {fileID: 8300000, guid: 9ff1e97483ea4407d96cb1860ba7cea2, type: 3}
 --- !u!50 &5835117670125916039
 Rigidbody2D:
@@ -217,7 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
-  toNextScene: 2
+  toNextScene: 3
 --- !u!95 &5835117670125916046
 Animator:
   serializedVersion: 4
@@ -238,3 +239,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &251163276064533989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5835117670125916033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9b544150d73d453a99b889b4b3fd646, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  livesText: {fileID: 0}

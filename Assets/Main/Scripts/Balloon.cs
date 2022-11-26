@@ -19,9 +19,19 @@ public class Balloon : MonoBehaviour
     [SerializeField] private float secondsToPop;
     [SerializeField] private AudioClip popSound;
     bool isScaling = false;
+    
+    // use for ballon evading player logic
+    [SerializeField] public bool isEvade;
+    public float speed;
+    public bool chase = false;
+    public Transform startingPoint;
+    private GameObject player;
+
 
     // Start is called before the first frame update
     void Start(){
+        player = GameObject.FindGameObjectWithTag("player");
+
         // Expands the balloon
         if (expand) {
             StartCoroutine(scaleOverTime(transform, new Vector3(0, 0, 90), secondsToPop));
@@ -36,6 +46,16 @@ public class Balloon : MonoBehaviour
         // * https://answers.unity.com/questions/1606381/how-to-make-a-object-move-right-automatically-in-2.html
         if (autoMove)
             transform.Translate(Vector2.right * Time.deltaTime * velocity);
+        
+        // evades player algo
+        if (isEvade) {
+            // Follow player if player is in the trigger zone
+            if (player == null ) return;
+            if (chase) Chase();
+            else
+                ReturnStartPoint();
+            Flip();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
@@ -76,9 +96,23 @@ public class Balloon : MonoBehaviour
     
         isScaling = false;
         Pop();
-        Score.ResetScore();
+        KillPlayer.Kill();
+    }
 
-        // Reset scene if balloon pops
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    // Balloon evades player algo. This is funky and doesn't really work smoothly but eh
+    private void ReturnStartPoint() {
+        transform.position = Vector2.MoveTowards(-transform.position, startingPoint.position, speed * Time.deltaTime);
+    }
+
+    private void Chase() {
+        transform.position = Vector2.MoveTowards(transform.position, -player.transform.position, speed * Time.deltaTime);
+    }
+
+    private void Flip() {
+        if (transform.position.x > player.transform.position.x)
+            transform.rotation = Quaternion.Euler(0,0,0);
+        else
+            transform.rotation = Quaternion.Euler(0,180,0);
+
     }
 }

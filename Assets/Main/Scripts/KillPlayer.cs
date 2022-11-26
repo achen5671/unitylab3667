@@ -10,8 +10,13 @@ public class KillPlayer : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other) {
         // Reload scene and reset score (score before level)
         if (other.CompareTag("player")) {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            Score.ResetScore();
+            Kill();
         }
+    }
+
+    public static void Kill() {
+        Score.ResetScore();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        PlayerLives.MinusLives();
     }
 }

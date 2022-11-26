@@ -44,7 +44,7 @@ Duplicate your scene twice times to create a two new scenes, and then edit the n
 Every time that your player pops the balloon, the game should transition to the next level. Every time the balloon disappears, the current level should restart.
 Use File-Build Settings to include all of your scenes in the build, and then test that the levels work.
 
-## Unity Lab 5: UI [DONE] NOTE: Need to do Extra Credit
+## Unity Lab 5: UI [DONE]
 You knew this was coming ... the Menu / UI lab:
 1. Create a menu scene for your game utilizing buttons (as well as any other UI components that you'd like). Your menu must include at least:
 instructions
@@ -55,7 +55,7 @@ Extra credit: also include a difficulty control. You decide what makes your game
 3. A pause/resume functionality in your game, as well as a link back from the game to the main menu.
 4. One other UI component of your choice that has not been used so far (e.g. Dropdown, Toggle, Input Field).
 
-## Unity labs 6 and 7: persistent data and high scores
+## Unity labs 6 and 7: persistent data and high scores [DONE]
 Persistent data:
 1. Your game must have two pieces of data that persist from scene to scene (score, health, settings, name, etc.)
 2. Your game should store the top X high scores, where X must be at least 5. They should be displayed in decreasing order of score, but the UI details are completely up to you otherwise. Don't forget to add a link to the high scores from your main menu!
@@ -68,31 +68,32 @@ Incorporate two animations into your game. The animations must be launched via s
 ## Final
 Lab game submission
 This is the link to submit your lab game.
+
 Your final game should have:
-layered background (background  /foreground)
-at least one image
-a player-controlled sprite
-an balloon sprite with automatic movement
-the ability for the player to shoot pins at the enemy
-collision detection of pins, using tags so that a player does not pop himself with his own bullets
-sound effect on collisions
-displayed score for player
-increasing size of balloon and impact on score
-at least one distractor
-at least three levels in increasing order of difficulty. Document the difficulty of each level in the directions.
-Fleeing algorithm implemented as one of the levels (balloon escapes player)
-scene transitions: Every time that your player pops the balloon, the game should transition to the next level. Every time the balloon gets too big and disappears, the current level should be restarted.
-directions (include the basics of each level)
-settings, including a volume setting with a slider
-menu
-pause/resume and link back to menu
-some other UI (dropdown, toggle, input)
-a data item that persist from scene to scene
-a second data item that persists
-high scores (at least 5, presented in order)
-animation #1
-animation #2
-Extra credit: difficulty selection by player (with documentation about difficulty)
+* layered background (background  /foreground) [CHECK]
+* at least one image [CHECK]
+* a player-controlled sprite [CHECK]
+* an balloon sprite with automatic movement [CHECK]
+* the ability for the player to shoot pins at the enemy [CHECK]
+* collision detection of pins, using tags so that a player does not pop himself with his own bullets [CHECK]
+* sound effect on collisions [CHECK]
+* displayed score for player [CHECK]
+* increasing size of balloon and impact on score [CHECK]
+* at least one distractor [CHECK]
+* at least three levels in increasing order of difficulty. Document the difficulty of each level in the directions. [CHECK]
+* Fleeing algorithm implemented as one of the levels  (balloon escapes player) [CHECK]
+* scene transitions: Every time that your player pops the balloon, the game should transition to the next level. Every time the balloon gets too big and disappears, the current level should be restarted. [CHECK]
+* directions (include the basics of each level) [CHECK]
+* settings, including a volume setting with a slider [CHECK]
+* menu [CHECK]
+* pause/resume and link back to menu [CHECK]
+* some other UI (dropdown, toggle, input) [CHECK]
+* a data item that persist from scene to scene [CHECK]
+* a second data item that persists [CHECK]
+* high scores (at least 5, presented in order) [CHECK]
+* animation #1 [CHECK]
+* animation #2 [CHECK]
+* Extra credit: difficulty selection by player (with documentation about difficulty)
 
 Please make sure that your game has links back to the menu on each scene, for easy navigation. 
 
@@ -105,6 +106,5 @@ Please submit as a at itch.io game jam; link https://itch.io/jam/fall-2022-lab-g
 
 (Note that the due date on the itch jam is later than the date here. The correct due date is December 4 at 9:00 AM).
 
-## Miscellaneous resources
-Tile Map
-* https://www.youtube.com/watch?v=1NCvpZDtTMI&list=PL4vbr3u7UKWp0iM1WIfRjCDTI03u43Zfu&index=12&ab_channel=MisterTaftCreates
+TODO:
+Select difficulty and balloon fleeing algo. make balloon away from player

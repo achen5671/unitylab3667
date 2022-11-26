@@ -24,6 +24,7 @@ public class FlyingEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Follow player if player is in the trigger zone
         if (player == null ) return;
         if (chase) Chase();
         else
@@ -50,9 +51,7 @@ public class FlyingEnemy : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision) {
         // Reset scene if enemy touches player
         if (collision.gameObject.tag == "player") {
-            // todo: make this a Kill() function in KillPlayer.cs
-            Score.ResetScore();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            KillPlayer.Kill();
         }
     }
 
