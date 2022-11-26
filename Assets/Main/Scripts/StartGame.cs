@@ -22,11 +22,12 @@ public class StartGame : MonoBehaviour
     }  
 
 
-    // Magic numbers suks.
+    // Magic numbers suks. This means if scene build changes, this will be incorrect
     public void LoadSettings () {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(7);
     }
 
+    // This should be called LoadMenu() for a clearer name
     public void LoadStart() {
         SceneManager.LoadScene(0);
     }

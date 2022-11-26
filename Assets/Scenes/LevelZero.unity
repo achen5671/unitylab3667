@@ -3069,6 +3069,10 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 794395849}
+    - target: {fileID: 5835117670125916041, guid: d39c6ca23933e4d258985ca142e04670, type: 3}
+      propertyPath: toNextScene
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5835117670125916042, guid: d39c6ca23933e4d258985ca142e04670, type: 3}
       propertyPath: m_SortingLayer
       value: 1
