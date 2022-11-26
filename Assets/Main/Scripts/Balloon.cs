@@ -76,9 +76,6 @@ public class Balloon : MonoBehaviour
     
         isScaling = false;
         Pop();
-        Score.ResetScore();
-
-        // Reset scene if balloon pops
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        KillPlayer.Kill();
     }
 }

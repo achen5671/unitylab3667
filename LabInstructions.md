@@ -86,7 +86,7 @@ Your final game should have:
 * directions (include the basics of each level)
 * settings, including a volume setting with a slider [CHECK]
 * menu [CHECK]
-* pause/resume and link back to menu
+* pause/resume and link back to menu [CHECK]
 * some other UI (dropdown, toggle, input) [CHECK]
 * a data item that persist from scene to scene [CHECK]
 * a second data item that persists

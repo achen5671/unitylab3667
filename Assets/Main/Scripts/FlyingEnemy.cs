@@ -51,8 +51,7 @@ public class FlyingEnemy : MonoBehaviour
         // Reset scene if enemy touches player
         if (collision.gameObject.tag == "player") {
             // todo: make this a Kill() function in KillPlayer.cs
-            Score.ResetScore();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            KillPlayer.Kill();
         }
     }
 
