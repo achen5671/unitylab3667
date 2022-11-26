@@ -32,6 +32,6 @@ public class StartGame : MonoBehaviour
     }
 
     public void LoadDirections() {
-        
+        SceneManager.LoadScene(6);
     }
 }

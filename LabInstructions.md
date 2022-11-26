@@ -80,16 +80,16 @@ Your final game should have:
 * displayed score for player [CHECK]
 * increasing size of balloon and impact on score [CHECK]
 * at least one distractor [CHECK]
-* at least three levels in increasing order of difficulty. Document the difficulty of each level in the directions.
+* at least three levels in increasing order of difficulty. Document the difficulty of each level in the directions. [CHECK]
 * Fleeing algorithm implemented as one of the levels  (balloon escapes player)
 * scene transitions: Every time that your player pops the balloon, the game should transition to the next level. Every time the balloon gets too big and disappears, the current level should be restarted. [CHECK]
-* directions (include the basics of each level)
+* directions (include the basics of each level) [CHECK]
 * settings, including a volume setting with a slider [CHECK]
 * menu [CHECK]
 * pause/resume and link back to menu [CHECK]
 * some other UI (dropdown, toggle, input) [CHECK]
 * a data item that persist from scene to scene [CHECK]
-* a second data item that persists
+* a second data item that persists [CHECK]
 * high scores (at least 5, presented in order) [CHECK]
 * animation #1 [CHECK]
 * animation #2 [CHECK]
