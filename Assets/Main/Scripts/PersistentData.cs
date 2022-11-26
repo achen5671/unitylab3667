@@ -6,6 +6,7 @@ public class PersistentData : MonoBehaviour
 {
 
     [SerializeField] string playerName;
+    [SerializeField] int difficulty;
 
     public static PersistentData Instance;
 
@@ -33,7 +34,16 @@ public class PersistentData : MonoBehaviour
         playerName = s;
     }
 
+    public void SetDifficuly(int i)
+    {
+        difficulty = i;
+    }
+
     public string GetName() {
         return playerName;
+    }
+
+    public int GetDifficulty() {
+        return difficulty;
     }
 }

@@ -35,4 +35,9 @@ public class StartGame : MonoBehaviour
     public void LoadDirections() {
         SceneManager.LoadScene(6);
     }
+
+    // 1: easy, 2: hard
+    public void SetDifficuly(int i) {
+        PersistentData.Instance.SetDifficuly(i);
+    }
 }

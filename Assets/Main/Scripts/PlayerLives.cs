@@ -12,11 +12,19 @@ public class PlayerLives : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        livesText.text = "Lives: " + playerLives;
+        // For some reason ternary is not working so this will do for now
+        if (PersistentData.Instance.GetDifficulty() == 2)
+            livesText.text = "Lives: " + playerLives;
+        else
+            livesText.text = "Lives: INF";
+
     }
 
     void Update() {
-        livesText.text = "Lives: " + playerLives;
+        if (PersistentData.Instance.GetDifficulty() == 2)
+            livesText.text = "Lives: " + playerLives;
+        else
+            livesText.text = "Lives: INF";
 
         if (playerLives == 0) {
             // end game if you run out of lives
@@ -29,7 +37,8 @@ public class PlayerLives : MonoBehaviour
     }
 
     public static void MinusLives() {
-        playerLives -= 1;
+        if (PersistentData.Instance.GetDifficulty() == 2)
+            playerLives -= 1;
     }
 
     public int GetPlayerLives() {
