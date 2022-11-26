@@ -44,7 +44,7 @@ Duplicate your scene twice times to create a two new scenes, and then edit the n
 Every time that your player pops the balloon, the game should transition to the next level. Every time the balloon disappears, the current level should restart.
 Use File-Build Settings to include all of your scenes in the build, and then test that the levels work.
 
-## Unity Lab 5: UI [DONE] NOTE: Need to do Extra Credit
+## Unity Lab 5: UI [DONE]
 You knew this was coming ... the Menu / UI lab:
 1. Create a menu scene for your game utilizing buttons (as well as any other UI components that you'd like). Your menu must include at least:
 instructions
@@ -55,7 +55,7 @@ Extra credit: also include a difficulty control. You decide what makes your game
 3. A pause/resume functionality in your game, as well as a link back from the game to the main menu.
 4. One other UI component of your choice that has not been used so far (e.g. Dropdown, Toggle, Input Field).
 
-## Unity labs 6 and 7: persistent data and high scores
+## Unity labs 6 and 7: persistent data and high scores [DONE]
 Persistent data:
 1. Your game must have two pieces of data that persist from scene to scene (score, health, settings, name, etc.)
 2. Your game should store the top X high scores, where X must be at least 5. They should be displayed in decreasing order of score, but the UI details are completely up to you otherwise. Don't forget to add a link to the high scores from your main menu!
@@ -81,7 +81,7 @@ Your final game should have:
 * increasing size of balloon and impact on score [CHECK]
 * at least one distractor [CHECK]
 * at least three levels in increasing order of difficulty. Document the difficulty of each level in the directions. [CHECK]
-* Fleeing algorithm implemented as one of the levels  (balloon escapes player)
+* Fleeing algorithm implemented as one of the levels  (balloon escapes player) [CHECK]
 * scene transitions: Every time that your player pops the balloon, the game should transition to the next level. Every time the balloon gets too big and disappears, the current level should be restarted. [CHECK]
 * directions (include the basics of each level) [CHECK]
 * settings, including a volume setting with a slider [CHECK]
@@ -105,3 +105,6 @@ Name your submission Last Name + First Name + name of game (e.g. Doe John Balloo
 Please submit as a at itch.io game jam; link https://itch.io/jam/fall-2022-lab-game-submission. Please also submit (via Blackboard)  the PDF of documentation along with a link to the GitHub repository hosting the code. You must submit on both itch and Blackboard to get credit. 
 
 (Note that the due date on the itch jam is later than the date here. The correct due date is December 4 at 9:00 AM).
+
+TODO:
+Select difficulty and balloon fleeing algo. make balloon away from player
