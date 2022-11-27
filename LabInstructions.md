@@ -70,41 +70,38 @@ Lab game submission
 This is the link to submit your lab game.
 
 Your final game should have:
-* layered background (background  /foreground) [CHECK]
-* at least one image [CHECK]
-* a player-controlled sprite [CHECK]
-* an balloon sprite with automatic movement [CHECK]
-* the ability for the player to shoot pins at the enemy [CHECK]
-* collision detection of pins, using tags so that a player does not pop himself with his own bullets [CHECK]
-* sound effect on collisions [CHECK]
-* displayed score for player [CHECK]
-* increasing size of balloon and impact on score [CHECK]
-* at least one distractor [CHECK]
-* at least three levels in increasing order of difficulty. Document the difficulty of each level in the directions. [CHECK]
-* Fleeing algorithm implemented as one of the levels  (balloon escapes player) [CHECK]
-* scene transitions: Every time that your player pops the balloon, the game should transition to the next level. Every time the balloon gets too big and disappears, the current level should be restarted. [CHECK]
-* directions (include the basics of each level) [CHECK]
-* settings, including a volume setting with a slider [CHECK]
-* menu [CHECK]
-* pause/resume and link back to menu [CHECK]
-* some other UI (dropdown, toggle, input) [CHECK]
-* a data item that persist from scene to scene [CHECK]
-* a second data item that persists [CHECK]
-* high scores (at least 5, presented in order) [CHECK]
-* animation #1 [CHECK]
-* animation #2 [CHECK]
-* Extra credit: difficulty selection by player (with documentation about difficulty)
+* layered background (background  /foreground) [DONE]
+* at least one image [DONE]
+* a player-controlled sprite [DONE]
+* an balloon sprite with automatic movement [DONE]
+* the ability for the player to shoot pins at the enemy [DONE]
+* collision detection of pins, using tags so that a player does not pop himself with his own bullets [DONE]
+* sound effect on collisions [DONE]
+* displayed score for player [DONE]
+* increasing size of balloon and impact on score [DONE]
+* at least one distractor [DONE]
+* at least three levels in increasing order of difficulty. Document the difficulty of each level in the directions. [DONE]
+* Fleeing algorithm implemented as one of the levels  (balloon escapes player) [DONE]
+* scene transitions: Every time that your player pops the balloon, the game should transition to the next level. Every time the balloon gets too big and disappears, the current level should be restarted. [DONE]
+* directions (include the basics of each level) [DONE]
+* settings, including a volume setting with a slider [DONE]
+* menu [DONE]
+* pause/resume and link back to menu [DONE]
+* some other UI (dropdown, toggle, input) [DONE]
+* a data item that persist from scene to scene [DONE]
+* a second data item that persists [DONE]
+* high scores (at least 5, presented in order) [DONE]
+* animation #1 [DONE]
+* animation #2 [DONE]
+* Extra credit: difficulty selection by player (with documentation about difficulty) [DONE]
 
 Please make sure that your game has links back to the menu on each scene, for easy navigation. 
 
 The game submission is due on Sunday, December 4 at 9:00 AM. It is worth 26 points, one point for each of the components on the list above as well as two points for general game and UI design.
 
-Together with your submission, you   must include a document (in PDF format) that checks off the components and says where to find them in the game if relevant (not in the code -- for example, which image do you have? what animations? which data items persist?)  If you do not have any component on the list above, please note so in the document. If you are missing a component and notify me, it will cost you one point. If you are missing a component and do NOT tell me, it will cost you two points (i.e. minimum grade for this project is -24 points).
+Together with your submission, you must include a document (in PDF format) that checks off the components and says where to find them in the game if relevant (not in the code -- for example, which image do you have? what animations? which data items persist?)  If you do not have any component on the list above, please note so in the document. If you are missing a component and notify me, it will cost you one point. If you are missing a component and do NOT tell me, it will cost you two points (i.e. minimum grade for this project is -24 points).
 
 Name your submission Last Name + First Name + name of game (e.g. Doe John Balloon Popper).
 Please submit as a at itch.io game jam; link https://itch.io/jam/fall-2022-lab-game-submission. Please also submit (via Blackboard)  the PDF of documentation along with a link to the GitHub repository hosting the code. You must submit on both itch and Blackboard to get credit. 
 
 (Note that the due date on the itch jam is later than the date here. The correct due date is December 4 at 9:00 AM).
-
-TODO:
-Select difficulty and balloon fleeing algo. make balloon away from player

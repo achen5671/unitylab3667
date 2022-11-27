@@ -6,7 +6,7 @@ public class PersistentData : MonoBehaviour
 {
 
     [SerializeField] string playerName;
-    [SerializeField] int difficulty;
+    [SerializeField] int difficulty = 1;
 
     public static PersistentData Instance;
 
@@ -34,6 +34,8 @@ public class PersistentData : MonoBehaviour
         playerName = s;
     }
 
+    // 1: easy, 2: hard
+    // default: easy mode
     public void SetDifficuly(int i)
     {
         difficulty = i;
