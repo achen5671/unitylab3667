@@ -71,6 +71,12 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
+# Bayat Assets (Not all assets are used)
+/Assets/BayatGames
+
+# Pixel Fonts
+/PixelFonts
+
 # Project Setting (should this be ignored ?)
 /ProjectSettings
 .DS_Store
