@@ -72,6 +72,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 # Bayat Assets (Not all assets are used)
+# https://assetstore.unity.com/packages/2d/environments/free-platform-game-assets-85838
 /Assets/BayatGames
 
 # Pixel Fonts
