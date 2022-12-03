@@ -24,6 +24,7 @@ public class Balloon : MonoBehaviour
     [SerializeField] public bool isEvade;
     public float speed;
     public bool chase = false;
+
     public Transform startingPoint;
     private GameObject player;
 

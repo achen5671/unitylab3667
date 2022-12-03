@@ -41,6 +41,10 @@ public class PlayerLives : MonoBehaviour
             playerLives -= 1;
     }
 
+    public static void ResetLives() {
+        playerLives = 3;
+    }
+
     public int GetPlayerLives() {
         return playerLives;
     }

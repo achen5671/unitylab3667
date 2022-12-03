@@ -318,11 +318,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1236011412238675599, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -194.98
+      value: -193.89
       objectReference: {fileID: 0}
     - target: {fileID: 1236011412238675599, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -174.67
+      value: -176.52
       objectReference: {fileID: 0}
     - target: {fileID: 1236011412238675599, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1513,11 +1513,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1236011412238675599, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -210.54
+      value: -210.06
       objectReference: {fileID: 0}
     - target: {fileID: 1236011412238675599, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -173.26
+      value: -175.88
       objectReference: {fileID: 0}
     - target: {fileID: 1236011412238675599, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2528,7 +2528,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1408183342}
-  - component: {fileID: 1408183341}
   - component: {fileID: 1408183343}
   m_Layer: 0
   m_Name: SoundManager
@@ -2537,19 +2536,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1408183341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1408183340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31936b70c7e154feaa53eb38220d3f86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeSlider: {fileID: 0}
 --- !u!4 &1408183342
 Transform:
   m_ObjectHideFlags: 0

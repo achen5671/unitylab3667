@@ -1947,7 +1947,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1408183342}
-  - component: {fileID: 1408183341}
   - component: {fileID: 1408183343}
   m_Layer: 0
   m_Name: SoundManager
@@ -1956,19 +1955,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1408183341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1408183340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31936b70c7e154feaa53eb38220d3f86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeSlider: {fileID: 0}
 --- !u!4 &1408183342
 Transform:
   m_ObjectHideFlags: 0
@@ -2911,7 +2897,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1236011412238675598, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
       propertyPath: autoMove
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1236011412238675598, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
       propertyPath: secondsToPop
@@ -2923,11 +2909,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1236011412238675599, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -191.46
+      value: -191.57
       objectReference: {fileID: 0}
     - target: {fileID: 1236011412238675599, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -173.13
+      value: -173.27
       objectReference: {fileID: 0}
     - target: {fileID: 1236011412238675599, guid: b33b1a6acb9fc481da3df0b584c233ab, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3128,6 +3114,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1458313006603573401, guid: c5f43eca45f7b43709a00d03f2bc142b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458313006603573401, guid: c5f43eca45f7b43709a00d03f2bc142b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.09
+      objectReference: {fileID: 0}
     - target: {fileID: 1572471371838248009, guid: c5f43eca45f7b43709a00d03f2bc142b, type: 3}
       propertyPath: m_RootOrder
       value: 10
