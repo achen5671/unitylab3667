@@ -8,9 +8,11 @@ public class SoundManager : MonoBehaviour
 {
     // singleton
     public static SoundManager instance {get; private set;}
+
     private AudioSource source;
 
     // See: https://www.youtube.com/watch?v=yWCHaTwVblk for volume slider
+    [SerializeField] bool isSlider;
     [SerializeField] Slider volumeSlider;
     private void Awake() {
         instance = this;
@@ -21,11 +23,14 @@ public class SoundManager : MonoBehaviour
         // Let sound play when switching scene
         // Without this: Audio will get cut off when switching between scenes (balloon pop)
         DontDestroyOnLoad( gameObject );
-        if (!PlayerPrefs.HasKey("musicVolume")){
-            PlayerPrefs.SetFloat("musicVolume", 1);
-            Load();
-        }else {
-            Load();
+
+        if (isSlider) {
+            if (!PlayerPrefs.HasKey("musicVolume")){
+                PlayerPrefs.SetFloat("musicVolume", 1);
+                Load();
+            }else {
+                Load();
+            }
         }
     }
 
