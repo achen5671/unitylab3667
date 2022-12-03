@@ -17,10 +17,16 @@ public class StartGame : MonoBehaviour
     public void LoadGame(int index) {
         string s = playerNameInput.text;
         PersistentData.Instance.SetName(s);
+        PlayerLives.ResetLives();
         Score.Reset();
         SceneManager.LoadScene(index);
     }  
 
+    public void Reloadgame() {
+        Score.Reset();
+        PlayerLives.ResetLives();
+        SceneManager.LoadScene(1);
+    }
 
     // Magic numbers suks. This means if scene build changes, this will be incorrect
     public void LoadSettings () {
